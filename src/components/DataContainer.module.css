@@ -1,0 +1,31 @@
+.wholeContainer {
+  width: 100%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(34, 55, 175);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.specialColor {
+  font-weight: 600;
+  color: rgb(6, 31, 173);
+}
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+.dataContainer {
+  flex: 0.5;
+}
+.mapContainer {
+  flex: 0.5;
+}

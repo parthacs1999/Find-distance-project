@@ -1,0 +1,11 @@
+.logoContainer {
+  width: 100%;
+  background-color: #ffffff;
+  height: fit-content;
+}
+.logoContainer img {
+  width: 160px;
+  height: 69px;
+  padding-left: 67px;
+  object-fit: contain;
+}
