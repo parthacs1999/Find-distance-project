@@ -27,8 +27,8 @@ const DataContainer = () => {
 
     //Mode change handler 
     const handleModeChange = (event) => {
-        setMode(event.target.value);
         setDirectionResponse(null);
+        setMode(event.target.value);
     }
 
     //Callback to handle routes and errors
@@ -89,6 +89,7 @@ const DataContainer = () => {
     // Delete all the waypoints handler
     const deleteWaypoints = () => {
         setWaypoints([]);
+        setDirectionResponse(null);
         inputWaypointRef.current.value = "";
     }
 
