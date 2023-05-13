@@ -181,6 +181,64 @@
 }
 
 /* Media queries */
+
+@media (max-width: 425px) {
+  .wholeContainer {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dataContainer {
+    flex: 1;
+  }
+  .mapContainer {
+    flex: 1;
+    min-width: 300px;
+    min-height: 357px;
+  }
+
+  /* Form styles */
+  .formContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .formElements {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+  }
+  .buttons {
+    flex: 1;
+  }
+  .buttons button {
+    width: 141px;
+    height: 55px;
+  }
+
+  .checkPoints input {
+    width: 350px;
+  }
+
+  /* Result styles */
+  .resultContainer {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 155px;
+  }
+  .distance {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1e2a32;
+  }
+  .modeStyle {
+    text-align: center;
+  }
+}
 @media (max-width: 375px) {
   /* CSS rules for screens up to 375px wide */
   .wholeContainer {
@@ -219,63 +277,6 @@
 
   .checkPoints input {
     width: 300px;
-  }
-
-  /* Result styles */
-  .resultContainer {
-    flex: 1;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 155px;
-  }
-  .distance {
-    font-family: "IBM Plex Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #1e2a32;
-  }
-  .modeStyle {
-    text-align: center;
-  }
-}
-@media (max-width: 425px) {
-  .wholeContainer {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .dataContainer {
-    flex: 1;
-  }
-  .mapContainer {
-    flex: 1;
-    min-width: 300px;
-    min-height: 357px;
-  }
-
-  /* Form styles */
-  .formContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .formElements {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    flex: 1;
-  }
-  .buttons {
-    flex: 1;
-  }
-  .buttons button {
-    width: 141px;
-    height: 55px;
-  }
-
-  .checkPoints input {
-    width: 350px;
   }
 
   /* Result styles */
