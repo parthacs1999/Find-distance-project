@@ -34,10 +34,22 @@ const DataContainer = () => {
     //Callback to handle routes and errors
     function handleDirections(response, status) {
         if (status === "OK") {
+            console.log(response);
             setDirectionResponse(response);
             setError(null);
-            setDistance(response.routes[0].legs[0].distance.text);
-            setDuration(response.routes[0].legs[0].duration.text);
+            if (waypoints.length > 0) {
+                const totalWaypointsDistance = response.routes[0].legs.reduce((acc, leg) => acc + leg.distance.value, 0);
+                const totalWaypointsDistanceText = (totalWaypointsDistance / 1000).toFixed(2) + ' km';
+                setDistance(totalWaypointsDistanceText);
+                const totalDurationSeconds = response.routes[0].legs.reduce((acc, leg) => acc + leg.duration.value, 0);
+                const totalDurationMinutes = Math.round(totalDurationSeconds / 60);
+                const totalDurationText = totalDurationMinutes + ' mins';
+                setDuration(totalDurationText);
+            }
+            else {
+                setDistance(response.routes[0].legs[0].distance.text);
+                setDuration(response.routes[0].legs[0].duration.text);
+            }
 
         } else {
             setDirectionResponse(null);
