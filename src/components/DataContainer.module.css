@@ -153,6 +153,7 @@
   height: 50%;
   display: flex;
   justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .distance {
@@ -172,7 +173,6 @@
 .text {
   height: 50%;
   background-color: #f4f8fa;
-  /* height: 80px; */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -187,4 +187,13 @@
 }
 .special {
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .wholeContainer {
+    max-width: 100%;
+  }
+  .dataContainer {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
